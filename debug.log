@@ -1,0 +1,193 @@
+SSL Proxy listening on port 5131
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Server error</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex: 0 1 max-content;
+        }
+
+        main {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 124px;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+            font-style: normal;
+            font-weight: 500;
+            color: #333333;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+
+        .phone {
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            color: #66C05D;
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+
+            header {
+                padding: 22px 0;
+            }
+
+            .logo {
+                height: 36px;
+                width: 59px;
+            }
+
+            .main-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                margin-top: 32px;
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            .phone {
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .phone + .phone {
+                margin-top: 8px;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            header {
+                padding: 14px 0;
+            }
+
+            .logo {
+                width: 48px;
+                height: 40px;
+            }
+
+            body {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .phone {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .main-img {
+                width: 109px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 22px;
+                line-height: 28px;
+                margin-bottom: 16px;
+                margin-top: 32px;
+            }
+
+            .phone + .phone {
+                margin-top: 5px;
+                margin-bottom: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <svg viewBox="0 0 60 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.518 36.733l3.635-3.754-1.182-1.267-2.278 2.352-4.16-4.252-1.358 1.402 5.343 5.52zM7.051 26.374l.876.95 1.883-1.946 1.095 1.131-1.883 1.946 1.182 1.221 2.321-2.443 1.095 1.131-3.678 3.845-5.343-5.564 3.678-3.8 1.095 1.131-2.32 2.398zM18.92 22.845l-3.635-1.085c.438-.815.219-1.946-.526-2.715-.788-.814-2.146-.814-3.066.136l-2.715 2.805 5.343 5.564 1.358-1.402-4.336-4.479.876-.905a.997.997 0 011.401-.045c.395.407.35 1.04-.043 1.448l-.789.814 4.643 1.357 1.489-1.493z" fill="#1D1E1F"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.942 14.114c-1.533-1.628-3.767-1.764-5.431-.045-1.708 1.72-1.533 4.026.044 5.655 1.533 1.628 3.766 1.764 5.43.045 1.665-1.719 1.533-4.026-.043-5.655zm-3.898 4.072c-1.051-1.086-1.314-2.172-.482-3.031.832-.86 1.883-.588 2.934.497 1.052 1.086 1.314 2.172.482 3.031-.876.86-1.883.588-2.934-.497z" fill="#1D1E1F"></path>
+            <path d="M23.562 11.129l-1.007-3.122L24.13 6.38l1.358 5.383 2.058 2.171-1.357 1.403-2.059-2.172-4.948-1.628 1.489-1.538 2.846 1.13h.044zM48.307 30.264L53.65 24.7l-1.446-1.448-5.343 5.52 1.446 1.492zM27.854 9.048l4.117-2.081-3.066 3.212 1.27 1.266 5.343-5.519-1.708-1.764-4.029 2.036 2.015-4.162-1.752-1.81L24.7 5.79l1.226 1.267 3.066-3.167-1.971 4.298.832.86zM37.095 9.817l-.92.95 2.059 2.126-1.095 1.13-2.059-2.125-1.138 1.221 2.496 2.579-1.095 1.13-3.854-3.98 5.343-5.565 3.854 3.981-1.095 1.131-2.496-2.578zM42.263 24.021l3.635 3.755 1.226-1.267-2.277-2.352 4.117-4.297-1.358-1.403-5.343 5.564zM56.672 27.867l-1.708 5.835v.046l3.678-3.846 1.27 1.312-5.343 5.52-1.664-1.72 1.445-6.062-3.635 3.8-1.226-1.266 5.343-5.565 1.84 1.946zM41.255 22.981l1.052-3.755c.788.453 1.883.226 2.627-.543.789-.814.745-2.216-.131-3.166l-2.89-2.986-5.344 5.564 1.358 1.403 4.336-4.479 1.05 1.086a1.08 1.08 0 01.045 1.447c-.394.408-1.008.362-1.402-.045l-.963-.995-1.139 4.976 1.401 1.493z" fill="#1D1E1F"></path>
+            <path d="M6.57 37.819h46.992L30.044 13.436 6.569 37.819z" fill="#6FAB5E"></path>
+        </svg>
+    </div>
+</header>
+<main>
+    <div class="main-img">
+        <svg width="100" height="90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="-1" y="1" width="5.59494" height="66.9873" transform="matrix(-1 0 0 1 23.3165 21.7595)" fill="#C4C4C4" stroke="black" stroke-width="2"></rect>
+            <path d="M47.226 89.7469L28.4819 22.7595H22.9637L41.7079 89.7469H47.226Z" fill="#C4C4C4" stroke="black" stroke-width="2"></path>
+            <path d="M28.7469 17.0127V22.6582H18.7216V17.0127C18.7216 14.2442 20.9659 12 23.7343 12C26.5027 12 28.7469 14.2442 28.7469 17.0127Z" fill="#F4BE55" stroke="black" stroke-width="2"></path>
+            <rect x="-1" y="1" width="5.59494" height="66.9873" transform="matrix(-1 0 0 1 69.519 21.7595)" fill="#C4C4C4" stroke="black" stroke-width="2"></rect>
+            <path d="M93.4285 89.7469L74.6843 22.7595H69.1662L87.9104 89.7469H93.4285Z" fill="#C4C4C4" stroke="black" stroke-width="2"></path>
+            <path d="M74.9494 17.0127V22.6582H64.9241V17.0127C64.9241 14.2442 67.1683 12 69.9367 12C72.7051 12 74.9494 14.2442 74.9494 17.0127Z" fill="#F4BE55" stroke="black" stroke-width="2"></path>
+            <g clip-path="url(#clip0_2414_52266)">
+                <rect y="55.3037" width="205" height="47" fill="#E6615E"></rect>
+                <path d="M0 55.3037H21L41 102.304H20L0 55.3037Z" fill="#F2F3F5"></path>
+                <path d="M41 55.3037H62L82 102.304H61L41 55.3037Z" fill="#F2F3F5"></path>
+                <path d="M82 55.3037H103L123 102.304H102L82 55.3037Z" fill="#F2F3F5"></path>
+            </g>
+            <rect y="55.3037" width="100" height="18.9873" rx="1" stroke="black" stroke-width="2" mask="url(#path-7-inside-1_2414_52266)"></rect>
+            <g clip-path="url(#clip1_2414_52266)">
+                <rect y="26.8228" width="205" height="47" fill="#E6615E"></rect>
+                <path d="M0 26.8228H21L41 73.8228H20L0 26.8228Z" fill="#F2F3F5"></path>
+                <path d="M41 26.8228H62L82 73.8228H61L41 26.8228Z" fill="#F2F3F5"></path>
+                <path d="M82 26.8228H103L123 73.8228H102L82 26.8228Z" fill="#F2F3F5"></path>
+            </g>
+            <rect y="26.8228" width="100" height="18.9873" rx="1" stroke="black" stroke-width="2" mask="url(#path-12-inside-2_2414_52266)"></rect>
+            <defs>
+                <clipPath id="clip0_2414_52266">
+                    <rect y="55.3037" width="100" height="18.9873" rx="1" fill="white"></rect>
+                </clipPath>
+                <clipPath id="clip1_2414_52266">
+                    <rect y="26.8228" width="100" height="18.9873" rx="1" fill="white"></rect>
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+    <h1>Сайт может не работать с VPN</h1>
+    <p>Рекомендуем отключить VPN для стабильной работы сайта.</p>
+    <a href="tel:88007000099" class="phone">8 800 700-00-99</a>
+</main>
+
+
+</body>
+0
